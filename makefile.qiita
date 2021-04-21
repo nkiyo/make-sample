@@ -1,0 +1,16 @@
+.PHONY: taskA taskB taskC
+
+taskA:
+	@echo 'Starting $@'
+	sleep 1
+	@echo 'Finished $@'
+
+taskB:
+	@echo 'Starting $@'
+	sleep 1
+	@echo 'Finished $@'
+
+taskC: taskB
+	@echo 'Starting $@'
+	sleep 1
+	@echo 'Finished $@'
